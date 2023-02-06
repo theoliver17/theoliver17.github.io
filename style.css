@@ -1,0 +1,23 @@
+
+ html{
+    background-color: red;
+ }
+
+ .alerte{
+    background-color: rgb(0, 0, 0);
+    padding: 50px;
+    width: 600px;
+    margin: auto;
+    border-radius: 30px;
+    margin-top: 450px;
+ }
+
+ h1, h2{
+    color: white;
+ }
+
+  @media (max-width: 600px) {
+    .menu, .main, .right {
+      flex: 100%;
+    }
+  }
