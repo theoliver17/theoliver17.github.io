@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vente d'habits en ligne</title>
+  <script> confirm("Faites attention où vous cliquez !"); </script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .header {
+      background-color: #ff0000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .menu {
+      flex: 25%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    .main {
+      flex: 50%;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+
+    .right {
+      flex: 25%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .menu, .main, .right {
+        flex: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>Vente d'habits en ligne</h2>
+    <p>Trouvez les dernières tendances de la mode</p>
+  </div>
+
+  <div class="row">
+    <div class="menu">
+      <h3>Catégories</h3>
+      <ul>
+        <li>T-shirts</li>
+        <li>Chemises</li>
+        <li>Pantalons</li>
+        <li>Robes</li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <h2>T-shirt en coton</h2>
+      <p>Prix : 20€</p>
+      <img src="tshirt.jpg" alt="T-shirt en coton" style="width:100%">
+    </div>
+
+    <div class="right">
+      <h3>Panier</h3>
+      <p>Total : 20€</p>
+      <button>Passer la commande</button>
+    </div>
+  </div>
+</body>
+</html>
